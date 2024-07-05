@@ -1,0 +1,68 @@
+@import './variable.scss';
+
+/* Global styles */
+img, picture {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border-radius: 5px;
+  line-height: 1.4;
+}
+
+ul {
+  margin: 0;
+}
+
+.h1--page-title {
+  margin-bottom: 55px;
+  margin-top: 55px;
+  @media (max-width: 767.98px) {
+    margin-bottom: 10px;
+  }
+
+}
+
+.text-long p a {
+  color: #b50000;
+}
+
+button {
+        width: auto;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 0;
+        border-bottom: 0;
+        color: var(--c-text-inverse);
+        background-color: $primary-color;
+        border-color: #890000;
+        color: $white-color;
+        word-break: normal;
+        max-width: 130px;
+        padding: 12px 30px 12px 13px;
+}
+
+.nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 12px;
+    background-color: #f5f5f5;
+    color: $black-color;
+    width: 100%;
+    max-width: inherit;
+
+  &.active {
+    @extend button;
+    max-width: inherit;
+    padding: 12px;
+    width: 100%;
+  }
+}
+
+.nav-tabs {
+  display: flex;
+  li {
+    flex: 1;
+  }
+}
